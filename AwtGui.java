@@ -1,4 +1,5 @@
 import java.awt.*;
+import java.awt.event.*;
 public class AwtGui {
     public static void main(String[]args){
         Frame frame = new Frame();
@@ -17,6 +18,6 @@ public class AwtGui {
         // Other frame setup code to
                                                             
         frame.setLayout(null);
-        frame.setVisiable(true);
+        frame.setVisible(true);
     }
 }
