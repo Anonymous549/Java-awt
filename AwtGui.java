@@ -17,7 +17,7 @@ public class AwtGui {
                                                                                         
         // Other frame setup code to
         Button button = new Button("HELLO WOLRD!");
-        button.setBounds(x:210,y:210,width:20,height:10);
+        button.setBounds(210,210,20,10);
          
         frame.add(button);                                                 
         frame.setLayout(null);
