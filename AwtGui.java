@@ -1,3 +1,4 @@
+//AWT TUTORIAL
 import java.awt.*;
 import java.awt.event.*;
 public class AwtGui {
@@ -18,7 +19,11 @@ public class AwtGui {
         // Other frame setup code to
         Button button = new Button("HELLO WOLRD!"); //Created Button object for button
         button.setBounds(210,210,120,30); //Setting Button axis and size
-         
+        Label label = new Label("HELLO WOLRD!");
+        label.setBounds(210,180,120,30);
+        
+        
+        frame.add(label);
         frame.add(button);                                                 
         frame.setLayout(null);
         frame.setVisible(true);
