@@ -8,12 +8,43 @@ public class AwtGui {
         frame.setTitle("HELLO WORLD!");
         // Setting the exit behavior
         frame.addWindowListener(new WindowAdapter() {
+        @Override
+        public void windowOpened(WindowEvent e) {
+        // Your code when the window is opened
+        }
+        @Override
         public void windowClosing(WindowEvent e) {
                                             
         // Define actions to perform when the window is closing
                                                             
         System.exit(0); // Exiting the application
         }
+
+        @Override
+        public void windowClosed(WindowEvent e) {
+        // Your code when the window is closed
+        }
+
+        @Override
+        public void windowIconified(WindowEvent e) {
+        // Your code when the window is minimized
+        }
+
+        @Override
+        public void windowDeiconified(WindowEvent e) {
+        // Your code when the window is restored from minimized
+        }
+
+        @Override
+        public void windowActivated(WindowEvent e) {
+        // Your code when the window is activated
+        }
+
+        @Override
+        public void windowDeactivated(WindowEvent e) {
+        // Your code when the window is deactivated
+        }
+        //You can override any or all of the WindowListener methods inside the WindowAdapter to handle various window events as needed.
         });
                                                                                         
         // Other frame setup code to
