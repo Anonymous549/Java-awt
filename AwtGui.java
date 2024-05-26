@@ -59,6 +59,7 @@ public class AwtGui {
         @Override
         public void actionPerformed(ActionEvent e) {
             label.setText("Button Clicked Successfully");
+            label.setBounds(200,240,200,50);
         }
         });
 
