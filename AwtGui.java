@@ -55,8 +55,8 @@ public class AwtGui {
         TextArea textarea = new TextArea("");
         textarea.setBounds(200,240,120,50);
 
-        button.setActionListener(new ActionListener() {
-        @override
+        button.addActionListener(new ActionListener() {
+        @Override
         public void actionPerformed(ActionEvent e) {
             label.setText("Button Clicked Successfully");
         }
