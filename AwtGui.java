@@ -62,8 +62,31 @@ public class AwtGui {
             label.setBounds(200,180,200,50);
         }
         });
+        
+        Checkbox checkbox = new Checkbox("Java");
+        Checkbox checbkox1 = new Checkbox("Python");
+        checkbox.setBounds(40,180,200,50);
+        checkbox1.setBounds(40,200,200,50);
+        checkbox.addItemListner(new ItemListner() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                label.setText("YOU SELECTED JAVA");
+                checkbox.setState(false);
+            }
+        });
+        checkbox1.addItemListner(new ItemListner() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                label.setText("YOU SELECTED PYTHON");
+                checkbox1.setState(false)
+            }
+        });
+        
 
         
+
+        frame.add(checkbox);
+        frame.add(checkbox1);
         frame.add(textarea);
         frame.add(label);
         frame.add(button);                                                 
