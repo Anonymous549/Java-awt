@@ -78,7 +78,7 @@ public class AwtGui {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 label.setText("YOU SELECTED PYTHON");
-                checkbox1.setState(false)
+                checkbox1.setState(false);
             }
         });
         
