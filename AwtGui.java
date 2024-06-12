@@ -51,7 +51,7 @@ public class AwtGui {
         Button button = new Button("HELLO WOLRD!"); //Created Button object for button
         button.setBounds(190, 220, 120, 30); //Setting Button axis and size
         Label label = new Label("HELLO WOLRD!");
-        label.setBounds(190, 180, 120, 30);
+        label.setBounds(190, 180, 150, 30);
         TextArea textarea = new TextArea("");
         textarea.setBounds(170, 250, 160, 40);
 
