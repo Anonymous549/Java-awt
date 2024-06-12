@@ -64,7 +64,7 @@ public class AwtGui {
         });
         
         Checkbox checkbox = new Checkbox("Java");
-        Checkbox checbkox1 = new Checkbox("Python");
+        Checkbox checkbox1 = new Checkbox("Python");
         checkbox.setBounds(40,180,200,50);
         checkbox1.setBounds(40,200,200,50);
         checkbox.addItemListener(new ItemListner() {
