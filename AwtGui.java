@@ -49,24 +49,23 @@ public class AwtGui {
                                                                                         
         // Other frame setup code to
         Button button = new Button("HELLO WOLRD!"); //Created Button object for button
-        button.setBounds(210,210,120,30); //Setting Button axis and size
+        button.setBounds(190, 220, 120, 30); //Setting Button axis and size
         Label label = new Label("HELLO WOLRD!");
-        label.setBounds(210,180,120,30);
+        label.setBounds(190, 180, 120, 30);
         TextArea textarea = new TextArea("");
-        textarea.setBounds(200,240,120,50);
+        textarea.setBounds(170, 250, 160, 40);
 
         button.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
             label.setText("Button Clicked Successfully");
-            label.setBounds(200,180,200,50);
         }
         });
         
         Checkbox checkbox = new Checkbox("Java");
         Checkbox checkbox1 = new Checkbox("Python");
-        checkbox.setBounds(40,180,200,50);
-        checkbox1.setBounds(40,200,200,50);
+        checkbox.setBounds(40, 180, 120, 20);
+        checkbox1.setBounds(40, 200, 120, 20);
         checkbox.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
