@@ -67,7 +67,7 @@ public class AwtGui {
         checkbox.setBounds(40, 180, 120, 20);
         checkbox1.setBounds(40, 200, 120, 20);
         
-        \*
+        /*
         checkbox.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
