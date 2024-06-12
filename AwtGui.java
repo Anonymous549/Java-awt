@@ -66,6 +66,8 @@ public class AwtGui {
         Checkbox checkbox1 = new Checkbox("Python");
         checkbox.setBounds(40, 180, 120, 20);
         checkbox1.setBounds(40, 200, 120, 20);
+        
+        \*
         checkbox.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
@@ -80,7 +82,36 @@ public class AwtGui {
                 checkbox1.setState(false);
             }
         });
+        */ //Commented because of new code implementation
         
+        checkbox.addItemListener(new ItemListener() {
+        @Override
+        public void itemStateChanged(ItemEvent e) {
+        if (checkbox.getState()) {
+            checkbox1.setState(false);
+            label.setText("YOU SELECTED JAVA");
+        } else {
+            if (!checkbox1.getState()) {
+                label.setText(""); // Clear label if both checkboxes are deselected
+            }
+        }
+    }
+});
+
+       checkbox1.addItemListener(new ItemListener() {
+       @Override
+       public void itemStateChanged(ItemEvent e) {
+        if (checkbox1.getState()) {
+            checkbox.setState(false);
+            label.setText("YOU SELECTED PYTHON");
+        } else {
+            if (!checkbox.getState()) {
+                label.setText(""); // Clear label if both checkboxes are deselected
+            }
+        }
+    }
+});
+
 
         
 
